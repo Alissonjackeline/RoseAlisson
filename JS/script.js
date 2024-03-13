@@ -9,7 +9,7 @@ if (titulo) {
   // Verificar si el texto del título es "ROSASEXPRESS"
   if (textoTitulo === "ROSASEXPRESS") {
     // Cambiar el texto del título
-    titulo.textContent = "ALISSON"; // Utilizar textContent en lugar de innerHTML para cambiar solo el texto
+    titulo.textContent = "ALISSON OROZCO"; // Utilizar textContent en lugar de innerHTML para cambiar solo el texto
   } else {
     console.log("No se cumple la condición");
   }
