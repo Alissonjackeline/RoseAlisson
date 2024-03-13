@@ -31,18 +31,18 @@ header {
   align-items: center;
   justify-content: space-between;
   padding: 20px;
-  background-color: red;
+  background-color: #910a67;
   height: 100px;
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 999; /* encabezado esté por encima de otros elementos */
+  z-index: 999;
 }
 
 header a i {
   color: white;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 }
 
 header nav ul {
@@ -55,7 +55,6 @@ header nav ul li a {
   color: white;
 }
 .seccion-1 {
-  background-color: #eeeeee;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -63,11 +62,21 @@ header nav ul li a {
   margin-top: 100px;
 }
 
-.seccion-1 .contenido-izquierda,
+.seccion-1 .contenido-izquierda {
+  text-align: start;
+}
+
 .seccion-1 .contenido-derecha {
   width: 100%;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+.seccion-1 .contenido-izquierda,
+.seccion-1 .contenido-derecha {
   margin-bottom: 20px;
 }
+
 .seccion-2 img {
   width: 100%;
 }
@@ -95,11 +104,36 @@ header nav ul li a {
 }
 
 h1 {
-  color: red;
+  color: #910a67;
+  font-size: 50px;
 }
+.my-element {
+  display: inline-block;
+  margin: 0 0.5rem;
 
+  animation: bounce;
+  animation-duration: 4s;
+}
+.btn-redes {
+  background-color: white;
+  border: 2px solid #910a67;
+  border-radius: 50px;
+  padding: 13px 15px;
+  font-size: 20px;
+  text-align: center;
+  display: inline-block;
+  text-decoration: none;
+  color: black;
+}
+.btn-redes:hover {
+  background-color: #910a67;
+  color: white;
+}
+.redes {
+  text-align: center;
+}
 #icon {
-  color: red;
+  color: #910a67;
   font-size: 25px;
 }
 
@@ -141,9 +175,17 @@ footer a {
 /* estilos para pantallas mas pequeñas (hasta 768px)*/
 @media (max-width: 768px) {
   header {
-    background-color: red;
+    background-color: #910a67;
+  }
+  .seccion-1 {
+    flex-direction: column-reverse; /* Cambia la dirección del eje principal en dispositivos móviles */
   }
 
+  .seccion-1 .contenido-izquierda,
+  .seccion-1 .contenido-derecha {
+    width: 90%; /* Ajusta el ancho de los elementos en dispositivos móviles */
+    margin: 0 auto; /* Centra los elementos */
+  }
   .contenido-izquierda {
     text-align: center;
   }
@@ -166,7 +208,7 @@ footer a {
     position: fixed;
     width: 100%;
     height: 100vh;
-    background: rgba(255, 2, 15, 0.976);
+    background: #910a67;
     overflow-y: auto;
     text-align: center;
 
@@ -287,7 +329,7 @@ footer a {
   background-color: #407fc7;
 }
 .alertas {
-  color: red;
+  color: #910a67;
 }
 /* ------------- Para Pantallas de más de 700px ------------- */
 @media only screen and (min-width: 700px) {

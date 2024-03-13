@@ -17,14 +17,14 @@ if (titulo) {
   console.log("El elemento del título no se encontró");
 }
 
-let nombre = "Ani";
-let ciudad = "Bs As";
-let gusto = "Chocolate";
+let nombre = "Alisson Jackeline Orozco Silva";
+let ciudad = "Piura";
+let gusto = "programacion";
 
 let parrafos = document.querySelector(".parrafo2");
 
 function cambiarTexto(nombre, ciudad, gusto) {
-  let contenido = `Me llamo ${nombre}, nací en ${ciudad} y vivo en Caballito. Me gusta el ${gusto} y salir a pasear en días de sol. Me encantaría aprender a programar para poder ayudar a las personas a mostrar lo que hacen.`;
+  let contenido = `Soy ${nombre}, una programadora apasionada, resido en la ciudad de ${ciudad}, Este es mi espacio digital donde comparto mi trabajo y mi amor por la ${gusto}. Explora mis proyectos y habilidades, ¡espero que encuentres algo que te inspire!`;
   return contenido;
 }
 
